@@ -9,6 +9,9 @@
 
 #include "LiquidCrystal_common.h"
 
+#include <Arduino.h>
+#include <Wire.h>
+
 /**
  * @brief - Enumeration defining different GPIO modes
 */

@@ -61,6 +61,7 @@ char InitializeI2C()
     /*
     Put the platform specific code over here
     */
+   Wire.begin();
    return 1;
 }
 
@@ -79,7 +80,9 @@ char WriteI2C(uint8_t address, uint8_t data)
     /*
     Put the platform specific code over here
     */
-   return 1;
+    Wire.beginTransmission(address);
+	Wire.write(data);
+	return !Wire.endTransmission();
 }
 
 /**
@@ -114,6 +117,7 @@ void DelayMS(unsigned int dl)
     /*
     Put the platform specific code over here
     */
+   delay(dl);
 }
 
 /**
@@ -130,4 +134,5 @@ void DelayUS(unsigned int dl)
     /*
     Put the platform specific code over here
     */
+   delayMicroseconds(dl);
 }
