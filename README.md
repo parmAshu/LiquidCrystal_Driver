@@ -2,7 +2,14 @@
 ---
 
 
-This library provides APIs that allow a mircocontroller to interact with 16X2 LCD module. The driver currently supports 16x2 LCD fitted with I2C adapter, only. Support for direct interfacing of LCD module will be included soon.
+This library provides APIs that allow a mircocontroller to interact with 16X2 LCD module. The driver currently supports only 16x2 LCD fitted with I2C adapter. Support for direct interfacing of LCD module will be shortly included.
+
+<br/>
+
+![LCD photo](images/LCD.jpg)
+
+<br/>
+<br/>
 
 ## API reference for 'LiquidCrystal_driver' library
 ---
