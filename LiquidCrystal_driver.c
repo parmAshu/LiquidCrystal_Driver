@@ -353,7 +353,7 @@ char LCDCursorPosition(uint8_t x, uint8_t y)
 {
     LCD_ERROR_CHECK( (x <= 15 && y <= 1) );
     
-    uint8_t pos = 40 * y + x;
+    uint8_t pos = 0X40 * y + x;
 
     if( LCDSendCommand( LCD_CMD_SET_DDRAM_ADD(pos) ) )
     {
